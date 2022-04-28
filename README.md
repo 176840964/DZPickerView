@@ -22,7 +22,7 @@ pod 'DZPickerView'
 
 ## Author
 
-DragonetZ, zhangxiaolong@xiaozhu.com
+DragonetZ, zxl3514@126.com
 
 ## License
 
