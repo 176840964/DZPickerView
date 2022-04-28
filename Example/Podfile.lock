@@ -1,0 +1,24 @@
+PODS:
+  - DZPickerView (0.1.0):
+    - SnapKit
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - DZPickerView (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  DZPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DZPickerView: 1cfbe2895dcf17347cf9f28d69ffbeb69f4a1deb
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: ec40a28fdbf6bd4918f182b725ba01e2a1325efa
+
+COCOAPODS: 1.11.3

@@ -4,10 +4,11 @@ platform :ios, '9.0'
 
 target 'DZPickerView_Example' do
   pod 'DZPickerView', :path => '../'
+  pod 'SnapKit'
 
   target 'DZPickerView_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end

@@ -1,0 +1,29 @@
+{
+  "name": "DZPickerView",
+  "version": "0.1.0",
+  "summary": "A short description of DZPickerView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/DragonetZ/DZPickerView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "DragonetZ": "zhangxiaolong@xiaozhu.com"
+  },
+  "source": {
+    "git": "https://github.com/DragonetZ/DZPickerView.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DZPickerView/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

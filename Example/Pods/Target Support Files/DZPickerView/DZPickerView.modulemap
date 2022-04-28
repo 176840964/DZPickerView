@@ -1,0 +1,6 @@
+framework module DZPickerView {
+  umbrella header "DZPickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

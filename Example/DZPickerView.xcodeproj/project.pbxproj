@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0BB98987BFBFE7FFAE879DF9 /* Pods-DZPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPickerView_Tests.release.xcconfig"; path = "Target Support Files/Pods-DZPickerView_Tests/Pods-DZPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		346E73D964A371F56B744DF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		528562EA0EBEE141C047B28A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		346E73D964A371F56B744DF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		528562EA0EBEE141C047B28A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DZPickerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZPickerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7434B6F8E8F581824B5E7C65 /* Pods-DZPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPickerView_Example.debug.xcconfig"; path = "Target Support Files/Pods-DZPickerView_Example/Pods-DZPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		88967EDCC520DF3B5BFA6B1F /* DZPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DZPickerView.podspec; path = ../DZPickerView.podspec; sourceTree = "<group>"; };
+		88967EDCC520DF3B5BFA6B1F /* DZPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DZPickerView.podspec; path = ../DZPickerView.podspec; sourceTree = "<group>"; };
 		8EA90EE1385D7D861A37D280 /* Pods-DZPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPickerView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DZPickerView_Tests/Pods-DZPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAC3AF0B9A5F6A2C611924BF /* Pods_DZPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD73A66EF569C4431257B7C8 /* Pods-DZPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPickerView_Example.release.xcconfig"; path = "Target Support Files/Pods-DZPickerView_Example/Pods-DZPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 				8EA90EE1385D7D861A37D280 /* Pods-DZPickerView_Tests.debug.xcconfig */,
 				0BB98987BFBFE7FFAE879DF9 /* Pods-DZPickerView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DZPickerView_Example/Pods-DZPickerView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DZPickerView/DZPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,7 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
